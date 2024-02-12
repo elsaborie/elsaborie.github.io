@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f2; /* Un beige très clair pour le fond */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* En-tête et navigation */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.banner {
+    padding: 40px 20px;
+    background-image: linear-gradient(to right, #f0e2d0 , #decba4); /* Dégradé de beige */
+    color: #333; /* Couleur plus foncée pour le contraste */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #e8d8c3; /* Beige moyen pour la barre de navigation */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #333; /* Couleur foncée pour une meilleure lisibilité */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a89f91; /* Couleur beige plus foncée pour le survol */
+}
+
+/* Styles principaux */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-family: 'Lobster', cursive; 
+    font-size: 32px; 
+    color: #a89f91; /* Beige foncé pour les titres */
+    margin-bottom: 15px; 
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif; 
+    font-size: 18px; 
+    color: #333; /* Couleur foncée pour le texte */
+    line-height: 1.6;
+    text-align: left; 
+    margin-bottom: 10px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e8d8c3; /* Beige moyen pour le pied de page */
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Boutons */
+.button {
+    display: inline-block;
+    background-color: #decba4; /* Beige doux pour les boutons */
+    color: #333; /* Couleur foncée pour le texte du bouton */
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c4b395; /* Beige plus foncé pour le survol */
+}
+
+/* Espacements et marges */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+/* Image slider */
+.image-slider {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 20px 0;
+    cursor: grab;
+}
+
+.image-slider figure img {
+    width: auto;
+    height: 200px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.image-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.image-slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.slogan {
+    text-align: center; /* Centre le texte */
+    font-family: 'Playfair Display', serif; /* Applique la police Playfair Display */
+    font-size: 24px; /* Taille de la police */
+    font-weight: 400; /* Poids de la police, 400 est pour le poids normal */
+    color: #333; /* Couleur du texte, ici un gris foncé pour un bon contraste */
+    margin: 20px 0; /* Ajoute de l'espace au-dessus et en dessous du slogan */
+}
+.slider-arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #333;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.left-arrow {
+    left: -30px;
+}
+
+.right-arrow {
+    right: -30px;
+}
+
+.image-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#blog {
+    text-align: center;
+    padding: 20px;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Crée autant de colonnes que possible avec une largeur minimale de 300px */
+    gap: 20px; /* Définit l'espacement entre les cartes */
+    justify-content: center; /* Centre les cartes dans le conteneur si elles n'occupent pas toute la largeur */
+}
+
+.blog-post {
+    width: 300px; /* Largeur fixe pour chaque carte d'article */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ombre subtile pour un effet de profondeur */
+    border-radius: 10px; /* Bordures arrondies pour un look moderne */
+    overflow: hidden; /* Garde tout à l'intérieur des bordures arrondies */
+    background-color: #fff; /* Fond blanc pour les cartes */
+    padding: 15px; /* Espacement interne */
+}
+
+.blog-post img {
+    width: 100%; /* Assure que l'image couvre la largeur de la carte */
+    height: auto; /* Maintient les proportions de l'image */
+    border-bottom: 2px solid #f0f0f0; /* Ligne subtile sous l'image */
+}
+
+.blog-post h3 {
+    margin: 15px 0 10px; /* Espacement autour du titre */
+    font-size: 20px; /* Taille du titre */
+}
+
+.blog-post p {
+    font-size: 16px; /* Taille du texte du résumé */
+    color: #666; /* Couleur plus douce pour le texte */
+    margin-bottom: 15px; /* Espacement avant le bouton */
+}
+
+.blog-post .button {
+    font-size: 14px; /* Taille adaptée pour le bouton dans la carte */
+}
+h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 48px; /* Ajustez la taille selon vos besoins */
+    color: #4A4A4A; /* Couleur du texte */
+}
+
+.slogan {
+    font-family: 'Tangerine', cursive;
+    font-size: 24px; /* Ajustez la taille selon vos besoins */
+    color: #4A4A4A; /* Couleur du texte */
+}
+.footer .social-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333; /* Couleur du texte des liens */
+}
+
+.footer .social-links a:hover {
+    text-decoration: underline;
+}
+.chef-container {
+    display: flex;
+    align-items: center; /* Centre verticalement l'image et le texte */
+}
+
+.oval-photo {
+    width: 100px; /* Largeur de l'image */
+    height: 150px; /* Hauteur de l'image */
+    border-radius: 50%; /* Rend les coins arrondis pour créer une forme ovale */
+    object-fit: cover; /* Assure que l'image couvre la zone définie sans être déformée */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+}
+
+.chef-message {
+    border: 2px solid #000; /* Bordure noire autour du texte */
+    padding: 10px; /* Espace entre le texte et la bordure */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Ombre portée pour un effet élégant */
+    max-width: 300px; /* Largeur maximale du bloc de texte */
+}
+#contact {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#contact h2, #contact h3 {
+    color: #c4b395;
+}
+
+.contact-info, .opening-hours, .additional-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p, .opening-hours p, .additional-info p {
+    line-height: 1.6;
+}

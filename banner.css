@@ -1,0 +1,23 @@
+.banner {
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231226/pngtree-illustrative-depiction-of-italian-pasta-variety-in-modern-and-textured-flat-image_13920966.png'); /* Remplacez par le lien de votre image de bannière */
+    background-size: cover; /* Assure que l'image de fond couvre entièrement la bannière */
+    background-position: center; /* Centre l'image de fond */
+    color: #fff; /* Couleur du texte */
+    text-align: center; /* Centre le texte dans la bannière */
+    padding: 50px 20px; /* Espacement autour du contenu de la bannière */
+}
+
+/* Style pour le titre dans la bannière */
+.banner h1 {
+    font-size: 2.5em; /* Taille du titre */
+    margin-bottom: 20px; /* Espacement sous le titre */
+    font-weight: bold; /* Rend le titre plus épais */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour améliorer la lisibilité */
+}
+
+/* Style pour le slogan dans la bannière */
+.banner p {
+    font-size: 1.5em; /* Taille du texte du slogan */
+    font-style: italic; /* Style italique pour le slogan */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Ombre portée pour améliorer la lisibilité */
+}

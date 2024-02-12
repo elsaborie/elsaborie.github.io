@@ -1,0 +1,10 @@
+.button {
+    background-color: #decba4; /* Couleur de fond */
+    color: #333; /* Couleur du texte */
+    border: none; /* Supprime la bordure par défaut */
+    padding: 10px 20px; /* Espacement interne pour augmenter la zone cliquable */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Change le curseur pour indiquer qu'il s'agit d'un bouton cliquable */
+    border-radius: 5px; /* Bordures arrondies pour un look plus moderne */
+    transition: background-color 0.3s, color 0.3s; /* Transition douce pour les interactions */
+}

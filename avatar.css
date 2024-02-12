@@ -1,0 +1,28 @@
+.avatar {
+    width: 100px; /* Taille de l'avatar */
+    height: 100px; /* Taille de l'avatar */
+    border-radius: 50%; /* Rend l'avatar circulaire */
+    object-fit: cover; /* Assure que l'image de l'avatar couvre la zone sans être déformée */
+    border: 2px solid #fff; /* Bordure blanche autour de l'avatar pour le faire ressortir sur n'importe quel fond */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère pour donner de la profondeur */
+}
+
+/* Style pour les avatars de petite taille (par exemple, dans les commentaires) */
+.avatar-small {
+    width: 50px; /* Taille réduite */
+    height: 50px; /* Taille réduite */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les avatars de grande taille (par exemple, sur une page de profil) */
+.avatar-large {
+    width: 150px; /* Taille agrandie */
+    height: 150px; /* Taille agrandie */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
